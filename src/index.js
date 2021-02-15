@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import ReactDOM from 'react-dom';
-import gsap from 'gsap';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Playground from "./components/Playground";
+
+
 
 ReactDOM.render(
   <React.StrictMode>
