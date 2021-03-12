@@ -6,7 +6,6 @@ import Projects from "./Projects";
 import About from "./About";
 import Playground from "./components/Playground";
 import gsap from 'gsap';
-import Weather from "./components/Weather";
 
 function App(){
   useEffect(()=>{
