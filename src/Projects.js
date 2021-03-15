@@ -6,7 +6,6 @@ import github from "./Images/github.png";
 function Projects(props) {
   return (
     <div>
-      <h1>Projects</h1>
       <div className="project">
         <div className="project-image">
           <a target="_blank" href="https://github.com/Pensum84">
@@ -25,19 +24,19 @@ function Projects(props) {
       </div>
       <hr />
 
-        <div className="api">
-          <Weather />
-        </div>
-        <div className="project-title">
-          <h2>Väder API</h2>
-          </div>
-        <div className="project-description">
-          <p>
-            Här har jag kört in ett väder API på min sida <br />
-            En utav uppgifterna man skulle utföra i sitt portfolio bygge.
-          </p>
-        </div>
+      <div className="api">
+        <Weather />
       </div>
+      <div className="project-title">
+        <h2>Väder API</h2>
+      </div>
+      <div className="project-description">
+        <p>
+          Här har jag kört in ett väder API på min sida <br />
+          En utav uppgifterna man skulle utföra i sitt portfolio bygge.
+        </p>
+      </div>
+    </div>
   );
 }
 

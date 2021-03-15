@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import lemons from "../Images/lemons.jpg";
 import "../App.css";
 

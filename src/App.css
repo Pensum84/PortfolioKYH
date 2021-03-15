@@ -1,9 +1,3 @@
-/* @media screen and (max-width: 875px) {
-  .about {
-    flex-direction: column;
-  }
-} */
-
 /* CSS för startsidan */
 
 .about {
@@ -13,7 +7,8 @@
 .logo {
   display: flex;
   width: 3%;
-  margin-left: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
 }
 
 .navigation {
@@ -37,9 +32,14 @@
 }
 
 .box img {
-  width: 100vw;
-  height: 92vh;
+  width: 98vw;
+  left: 10px;
+  height: 91vh;
   position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .quote h2 {
@@ -59,14 +59,15 @@
   justify-content: center;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   transform: translate(-50%, -50%);
 }
 
 /* CSS för projekt sidan */
 
 .api {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  max-width: 30%;
 }
 
 .project {
@@ -87,36 +88,11 @@
 }
 
 .project-image img {
-  height: 25%;
-  width: 25%;
+  width: 15%;
+  margin-top: 20px;
 }
 
 /*About me sidans CSS*/
-
-@media screen and (max-width: 1500px) {
-  #yellow {
-    position: absolute;
-    left: 30%;
-    top: 20%;
-  }
-  .text {
-    margin-bottom: 25px;
-    position: absolute;
-    margin: 15%;
-    left: 190px;
-    top: 57%;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .text {
-    margin: 5%;
-    position: absolute;
-    left: 55px;
-    top: 50%;
-    padding-bottom: 50px;
-  }
-}
 
 .circle {
   display: flex;
@@ -287,7 +263,7 @@
 .app {
   background-image: url("../src/Images/cold-bg.jpg");
   background-size: cover;
-  max-width: 30%;
+  max-width: 1000%;
   background-position: bottom;
   transition: 0.4 ease;
 }
@@ -299,7 +275,7 @@
 main {
   min-height: 50vh;
   background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
-  padding: 25px;
+  padding: 20px;
 }
 
 .search-box {
@@ -371,6 +347,8 @@ main {
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
 
+/*Contact form css*/
+
 .contact-form {
   background-color: rgba(248, 252, 252, 0.445);
   display: flex;
@@ -423,4 +401,92 @@ textarea {
   background-color: rgb(248, 248, 248);
   box-shadow: 2px 2px 6px 3px rgb(245, 245, 245);
   border: 1px solid black;
+}
+
+.project {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1500px) {
+  #yellow {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+  }
+  .text {
+    margin-bottom: 25px;
+    position: absolute;
+    margin: 15%;
+    left: 190px;
+    top: 57%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .text {
+    margin: 5%;
+    position: absolute;
+    left: 55px;
+    top: 50%;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ 
+  .text {
+    margin: 5%;
+    position: absolute;
+    left: 55px;
+    top: 50%;
+    padding-bottom: 50px;
+  }
+  .contact-form {
+    width: 40%;
+  }
+  .api {
+    display: flex;
+    position: relative;
+    left: 75px;
+    width: 100px;
+  }
+  .project-image {
+    margin-left: 180px;
+    size: 100%;
+  }
+  .project-title {
+    display: flex;
+    position: relative;
+    max-width: 70%;
+    left: 75px;
+  }
+  .project-description {
+    display: flex;
+    position: relative;
+    max-width: 70%;
+    left: 75px;
+  }
+  .underRubrik {
+    margin-top: 20%;
+  }
+  .logo {
+    width: 12%;
+    margin-left: 2px;
+    border-radius: 20px;
+    display: none;
+  }
+  .navigation-sub {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: 38%;
+  }
+  .contact-form{
+    bottom: 60px;
+  }
+  .box{
+    
+  }
 }
