@@ -3,11 +3,13 @@ import modal from "./Images/modal.jpg";
 import "./App.css";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import Projects from "./Projects";
-import About from "./About";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Playground from "./components/Playground";
 import gsap from 'gsap';
 
 function App(){
+
   useEffect(()=>{
     const tl = gsap.timeline();
 
@@ -39,11 +41,15 @@ function App(){
             <a href="./About" className="item">
               About Me
             </a>
+            <a href="./Contact" className="item">
+              Contact
+            </a>
           </div>
         </div>
         <Route exact path="/" component={Playground} />
         <Route exact path="/Projects" component={Projects} />
         <Route exact path="/About" component={About} />
+        <Route exact path="/Contact" component={Contact} />
       </div>
     </BrowserRouter>
   );
