@@ -39,7 +39,7 @@ function App(){
               Projects
             </a>
             <a href="./About" className="item">
-              About Me
+              About
             </a>
             <a href="./Contact" className="item">
               Contact
